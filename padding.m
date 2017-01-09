@@ -1,3 +1,11 @@
+%{
+	Padding around the image by 0 gray level
+	Para:
+		in: input image to be padded
+		len: length of pixels to add at one edge
+%}
+
+%%
 function [ out ] = padding( in, len )
 
 [Row, Col] = size(in);
@@ -10,4 +18,5 @@ for i = len+1 : Row+len
 end
 
 end
+%%
 

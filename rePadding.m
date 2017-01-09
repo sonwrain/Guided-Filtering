@@ -1,3 +1,11 @@
+%{
+	Repadding the image from a padded one
+	Para:
+		in: input image to be repadded
+		len: length of pixels to remove at one edge
+%}
+
+%%
 function [ out ] = rePadding( in, len )
 
 [Row, Col] = size(in);
@@ -10,4 +18,5 @@ for i = 1 : Row-2*len
 end
 
 end
+%%
 
